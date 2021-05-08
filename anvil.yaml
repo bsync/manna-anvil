@@ -1,5 +1,5 @@
 services: []
-package_name: Material_Design_1
+package_name: manna
 allow_embedding: false
 name: manna
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox}

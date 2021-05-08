@@ -8,11 +8,11 @@ import vimeo
 # them with @anvil.server.callable.
 # Here is an example - you can replace it with your own:
 #
-# @anvil.server.callable
-# def say_hello(name):
-#   print("Hello, " + name + "!")
-#   return 42
-#
+@anvil.server.callable
+def say_hello(name):
+   print("Hello, " + name + "!")
+   return 42
+
 class VimeoClient(vimeo.VimeoClient):
   pass
 

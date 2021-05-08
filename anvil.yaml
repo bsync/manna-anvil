@@ -1,7 +1,20 @@
 allow_embedding: false
 package_name: Material_Design_1
-db_schema: []
+db_schema:
+- name: Table 0
+  id: 125375
+  python_name: table_0
+  columns:
+    MzLGtt+NU_c=:
+      name: Column0
+      type: date
+      admin_ui: {order: 0, width: 200}
+  access: {python_name: table_0, app_id: 6N3PGPAYSIB26GH4, server: full, client: none,
+    table_mapping_name: null, table_mapping_id: null, table_id: 125375}
 name: Material Design 1
 startup_form: Form1
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox}
-services: []
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {auto_create_missing_columns: false}

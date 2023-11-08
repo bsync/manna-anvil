@@ -12,5 +12,6 @@ def say_hello(name):
    print("Hello, " + name + "!")
    return 42
 
+anvile.server.call('say_hello', 'from the gutter')
   
 

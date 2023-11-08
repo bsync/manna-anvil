@@ -1,9 +1,14 @@
-services: []
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
 package_name: manna
 allow_embedding: false
 name: manna
-runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox}
+runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
+  server_spec: null}
 metadata: {}
 startup_form: Form1
-db_schema: []
+db_schema: {}
+uplink_visible: true
 renamed: true

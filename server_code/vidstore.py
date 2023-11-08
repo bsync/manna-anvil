@@ -1,5 +1,4 @@
 import anvil.server
-import vimeo
 
 # This is a server module. It runs on the Anvil server,
 # rather than in the user's browser.
@@ -12,10 +11,6 @@ import vimeo
 def say_hello(name):
    print("Hello, " + name + "!")
    return 42
-
-class VimeoClient(vimeo.VimeoClient):
-  pass
-
 
   
 

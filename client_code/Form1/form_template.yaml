@@ -48,3 +48,7 @@ components:
       components: []
       data_bindings: []
     data_bindings: []
+  - name: form2_1
+    properties: {}
+    type: form:Form2
+    layout_properties: {grid_position: 'VZBVEM,UFDPSW'}

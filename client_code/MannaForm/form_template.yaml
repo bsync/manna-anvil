@@ -16,15 +16,15 @@ components:
   name: label_1
   layout_properties: {slot: title}
   data_bindings: []
-- name: data_grid_1
+- name: catalog
   properties:
     columns:
-    - {id: JKSDUP, title: Column 1, data_key: column_1}
-    - {id: VJQQOR, title: Column 2, data_key: column_2}
-    - {id: OJLQEN, title: Column 3, data_key: column_3}
+    - {id: JKSDUP, title: Date, data_key: column_1}
+    - {id: VJQQOR, title: Series, data_key: column_2, width: 358, expand: false}
+    - {id: OJLQEN, title: Title, data_key: column_3}
   type: DataGrid
   components:
-  - name: repeating_panel_1
+  - name: series
     properties: {item_template: MannaForm.RowTemplate1}
     type: RepeatingPanel
   layout_properties: {slot: default}

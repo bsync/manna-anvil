@@ -4,7 +4,8 @@ unique_ids:
     MannaForm.ItemTemplate1: '1699490564281379454471315.36694'
     VideoForm: '1699417095375403502006655.39026'
   modules: {}
-  server_modules: {}
+  server_modules:
+    ServerModule1: '169949383825591900106446.27788'
   assets:
     standard-page.html: PTKODTONXJY7M5CBO4DAZ3RC272H6YRE
     theme.css: QNA6RU7SXA2VAVODMXZTLW6CZ7GR3L3I

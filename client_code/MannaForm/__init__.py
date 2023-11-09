@@ -10,7 +10,4 @@ class MannaForm(MannaFormTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     # Any code you write here will run when the form opens.
-    result = anvil.server.call('catalog', 'someseries')
-    for name in result:
-      self.repeating_panel_1.items = result
-
+    self.repeating_panel_1.items = anvil.server.call('catalog', 'someseries')

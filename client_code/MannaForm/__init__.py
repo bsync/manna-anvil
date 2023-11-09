@@ -1,5 +1,8 @@
 from ._anvil_designer import MannaFormTemplate
 from anvil import *
+import anvil.tables as tables
+import anvil.tables.query as q
+from anvil.tables import app_tables
 import anvil.server
 
 class MannaForm(MannaFormTemplate):
@@ -7,5 +10,7 @@ class MannaForm(MannaFormTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     # Any code you write here will run when the form opens.
-    result = anvil.server.call('load_vids')
+    result = anvil.server.call('catalog', 'someseries')
+    for name in result:
+      self.repeating_panel_1.items = result
 

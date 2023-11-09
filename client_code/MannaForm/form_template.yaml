@@ -27,7 +27,7 @@ components:
       columns:
       - {id: JQNRWT, title: Date, data_key: column_1}
       - {id: NCKTCZ, title: Series, data_key: column_2}
-      - {id: GNHZDM, title: Lesson, data_key: column_3}
+      - {id: GNHZDM, title: Video, data_key: column_3}
       - {id: PMIXZT, title: Duration, data_key: column_4}
       auto_header: true
       tooltip: ''
@@ -39,7 +39,7 @@ components:
       spacing_above: small
       spacing_below: small
       background: ''
-    name: data_grid_1
+    name: series_table
     layout_properties: {grid_position: 'ISPKHO,HNRVBJ'}
     components:
     - type: DataRowPanel
@@ -48,6 +48,10 @@ components:
       layout_properties: {grid_position: 'HDGPEQ,RBALXD', slot: footer}
       components: []
       data_bindings: []
+    - name: repeating_panel_1
+      properties: {item_template: MannaForm.ItemTemplate1}
+      type: RepeatingPanel
+      layout_properties: {slot: footer}
     data_bindings: []
   - name: video_form_1
     properties: {}

@@ -16,44 +16,15 @@ components:
   name: label_1
   layout_properties: {slot: title}
   data_bindings: []
-- type: ColumnPanel
-  properties: {col_widths: '{}'}
-  name: column_panel_1
-  layout_properties: {slot: default}
+- name: data_grid_1
+  properties:
+    columns:
+    - {id: JKSDUP, title: Column 1, data_key: column_1}
+    - {id: VJQQOR, title: Column 2, data_key: column_2}
+    - {id: OJLQEN, title: Column 3, data_key: column_3}
+  type: DataGrid
   components:
-  - type: DataGrid
-    properties:
-      role: null
-      columns:
-      - {id: JQNRWT, title: Date, data_key: column_1}
-      - {id: NCKTCZ, title: Series, data_key: column_2}
-      - {id: GNHZDM, title: Video, data_key: column_3}
-      - {id: PMIXZT, title: Duration, data_key: column_4}
-      auto_header: true
-      tooltip: ''
-      border: ''
-      foreground: ''
-      rows_per_page: 20
-      visible: true
-      show_page_controls: true
-      spacing_above: small
-      spacing_below: small
-      background: ''
-    name: series_table
-    layout_properties: {grid_position: 'ISPKHO,HNRVBJ'}
-    components:
-    - type: DataRowPanel
-      properties: {}
-      name: data_row_panel_1
-      layout_properties: {grid_position: 'HDGPEQ,RBALXD', slot: footer}
-      components: []
-      data_bindings: []
-    - name: repeating_panel_1
-      properties: {item_template: MannaForm.ItemTemplate1}
-      type: RepeatingPanel
-      layout_properties: {slot: footer}
-    data_bindings: []
-  - name: video_form_1
-    properties: {}
-    type: form:VideoForm
-    layout_properties: {grid_position: 'IJCMQZ,GGKQMY'}
+  - name: repeating_panel_1
+    properties: {item_template: MannaForm.RowTemplate1}
+    type: RepeatingPanel
+  layout_properties: {slot: default}

@@ -10,4 +10,4 @@ class MannaForm(MannaFormTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     # Any code you write here will run when the form opens.
-    self.series.items = anvil.server.call('Catalog')
+    self.series.items = anvil.server.call('list_series')

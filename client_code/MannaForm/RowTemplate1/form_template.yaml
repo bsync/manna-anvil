@@ -3,3 +3,4 @@ container:
   type: DataRowPanel
   properties: {visible: true}
 components: []
+data_bindings: []

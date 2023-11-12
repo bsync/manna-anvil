@@ -19,12 +19,14 @@ components:
 - name: catalog
   properties:
     columns:
-    - {id: JKSDUP, title: Date, data_key: column_1}
-    - {id: VJQQOR, title: Series, data_key: column_2, width: 358, expand: false}
-    - {id: OJLQEN, title: Title, data_key: column_3}
+    - {id: JKSDUP, title: Date, data_key: date}
+    - {id: VJQQOR, title: Series, data_key: series, width: 358, expand: false}
+    - {id: OJLQEN, title: Title, data_key: title}
   type: DataGrid
   components:
   - name: series
-    properties: {item_template: MannaForm.RowTemplate1}
+    properties: {item_template: MannaForm.RowTemplate1, visible: true}
     type: RepeatingPanel
+    layout_properties: {}
+    data_bindings: []
   layout_properties: {slot: default}

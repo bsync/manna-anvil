@@ -22,6 +22,7 @@ components:
     - {id: JKSDUP, title: Date, data_key: date}
     - {id: VJQQOR, title: Series, data_key: series, width: 358, expand: false}
     - {id: OJLQEN, title: Title, data_key: title}
+    - {id: WTPWOR, data_key: duration, title: Duration}
   type: DataGrid
   components:
   - name: series

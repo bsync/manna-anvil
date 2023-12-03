@@ -24,10 +24,5 @@ components:
     - {id: OJLQEN, title: Title, data_key: title}
     - {id: WTPWOR, data_key: duration, title: Duration}
   type: DataGrid
-  components:
-  - name: series
-    properties: {item_template: MannaForm.RowTemplate1, visible: true}
-    type: RepeatingPanel
-    layout_properties: {}
-    data_bindings: []
+  components: []
   layout_properties: {slot: default}

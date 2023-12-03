@@ -2,8 +2,6 @@ unique_ids:
   forms:
     MannaForm: LDKTWEJ7JXN6ER425HPSPYYPCZ5GOVO6
     MannaForm.ItemTemplate1: '1699490564281379454471315.36694'
-    MannaForm.ItemTemplate2: '1699495764482157305980689.66107'
-    MannaForm.RowTemplate1: '1699495792682342256445619.4595'
     VideoForm: '1699417095375403502006655.39026'
   modules: {}
   server_modules: {}
